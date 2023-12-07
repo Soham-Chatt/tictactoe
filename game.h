@@ -16,12 +16,11 @@ public:
   void switchPlayer();
   void printBoard();
 
-
   Game() {
-    currentPlayer = 1;
+    currentPlayer = PLAYER_1;
     for (auto & row : board) {
       for (int & cell : row) {
-        cell = 0;
+        cell = EMPTY;
       }
     }
   }
